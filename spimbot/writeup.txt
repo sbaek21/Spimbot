@@ -1,0 +1,8 @@
+<Explain your team's strategy, implementation, etc.>
+
+The current implementation for our SPIMbot's movement is fairly independent of the actual map layout.
+
+- Anytime it's out of water, it will immediately move to solve two puzzles to get two puzzle's worth of water,
+- It reverses direction when bumping into a wall,
+- When it falls, it will turn to the left if it's on the right side of the map, and to the right if it's on the left side of the map (currently not working and seemingly always turns right)
+- It uses the timer to periodically jump upwards, in hopes to catch a ladder, or at worst, it will jump and wash a few extra tiles upwards.
